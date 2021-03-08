@@ -360,10 +360,10 @@ export default class MessageContainer<
             inverted ? this.renderFooter : this.renderHeaderWrapper
           }
           onScroll={this.handleOnScroll}
-          scrollEventThrottle={100}
+          scrollEventThrottle={1}
           onLayout={this.onLayoutList}
           onEndReached={this.onEndReached}
-          onEndReachedThreshold={0.1}
+          onEndReachedThreshold={0.3}
           {...this.props.listViewProps}
         />
       </View>
